@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginBottom="8dp"
+    android:layout_height="wrap_content">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/contact_display"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/prof_icon" />
+
+    <TextView
+        android:id="@+id/contact_display_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:maxLines="1"
+        android:text="Contact Username"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/contact_display"
+        android:layout_toEndOf="@+id/contact_display"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+    <TextView
+        android:id="@+id/contact_display_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="@string/number"
+        android:visibility="visible"
+        android:layout_below="@+id/contact_display_name"
+        android:layout_alignLeft="@+id/contact_display_name"
+        android:layout_alignStart="@+id/contact_display_name"/>
+
+</RelativeLayout>
+
