@@ -198,7 +198,7 @@ public class Profile extends AppCompatActivity implements NavigationView.OnNavig
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.nav_RescueX_Users) {
-            Intent searchIntent = new Intent(Profile.this, RescueX_Users.class);
+            Intent searchIntent = new Intent(Profile.this, UsersActivity.class);
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.nav_history_layout) {

@@ -245,8 +245,8 @@ public class MenuActivity extends AppCompatActivity
             startActivity(searchIntent);
             overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
 
-         } else if (id == R.id.nav_RescueX_Users) {
-        Intent searchIntent = new Intent(MenuActivity.this, RescueX_Users.class);
+         } else if (id == R.id.nav_users_activity) {
+        Intent searchIntent = new Intent(MenuActivity.this, UsersActivity.class);
         startActivity(searchIntent);
         overridePendingTransition(R.anim.pull_in_right, R.anim.push_out_left);
         } else if (id == R.id.nav_history_layout) {
